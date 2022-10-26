@@ -1,0 +1,22 @@
+<div id="Experiencia" class="cuerpo">
+    <h3>Experiencia<button type="button"class="botonC" routerLink="/nuevaexp" *ngIf="islogged"><i class="fa-solid fa-plus"></i></button></h3>
+   <div class="lista">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Experiencia of expe">
+                    <div>
+                        <div style="display:flex ;">
+                            <td><h4>{{Experiencia.nombreE}}:</h4></td>
+                            <td><h5 style="color: rgb(47, 47, 47, 70%);">{{Experiencia.fechaIni}} - {{Experiencia.fechaFin}}</h5></td>
+                            <td *ngIf="islogged"><button class="botonM" routerLink="/editexp/{{Experiencia.id}}"><i class="fa-solid fa-pen"></i></button></td>
+                            <td *ngIf="islogged"><button class="botonM" (click)="delete(Experiencia.id)"><i class="fa-solid fa-trash"></i></button></td>
+                        </div>
+                        <td>{{Experiencia.descripcionE}}</td>
+                    </div> 
+                    <br>    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

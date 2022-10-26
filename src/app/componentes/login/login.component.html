@@ -1,0 +1,24 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    
+    <button type="button" class="botonM" routerLink="/"><i class="fa-solid fa-arrow-left"></i></button>
+    <h2 class="active"> Login </h2>
+
+    <p>Ingresar usuario y clave</p>
+    <!-- Login Form -->
+    <form #miFormulario="ngForm" (ngSubmit)="login(miFormulario)">
+
+      <input type="text" id="email" class="fadeIn second" name="email" placeholder="Usuario" ngModel>
+      <input type="password" id="password" class="fadeIn third" name="password" placeholder="Contraseña" ngModel>
+
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+
+    <!-- Remind Passowrd 
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+-->
+  </div>
+</div>

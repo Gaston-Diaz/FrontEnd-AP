@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logoAP{
+    width: 150px;
+    float: left;
+}
+img{
+    width: 40px;
+}
+.redes{
+    margin-top: 17px;
+    margin-right: 7px;
+    display: flex;
+}
+.botonP{ /* BOTONES DEL LOGIN */
+    border-radius: 50px;
+    padding: 1px;
+    width: 42px;
+    height: 42px;
+    cursor:pointer;
+    background-color: rgb(255, 255, 255, );
+    opacity: 100%;
+}
+.fa-right-to-bracket{
+    font-size: 23px;
+}
+.fa-right-from-bracket{
+    font-size: 23px;
+}

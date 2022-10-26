@@ -1,0 +1,27 @@
+<div id="Proyectos" class="cuerpo">
+    <h3>
+        Proyectos<button class="botonC" routerLink="/nuevoProyecto" *ngIf="islogged"><i class="fa-solid fa-plus"></i></button>
+    </h3>
+    <div class = "lista">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Proyecto of proyecto">
+                    <div>
+                        <br>
+                        <div>
+                             <h4>
+                                <div style="display:flex ; align-items: baseline;">
+                                    <a href="{{Proyecto.enlace}}" style="text-decoration:none ;">{{Proyecto.nombreP}}:</a>
+                                    <td><h5 style="color: rgb(47, 47, 47, 70%);">{{Proyecto.fecha}} </h5></td>
+                                </div>
+                                 <button class="botonM" routerLink="editProyecto/{{Proyecto.id}}" *ngIf="islogged"><i class="fa-solid fa-pen"></i></button>
+                                 <button class="botonM" (click)="delete(Proyecto.id)" *ngIf="islogged"><i class="fa-solid fa-trash"></i></button>
+                             </h4>
+                             <p>{{Proyecto.descripcionP}}</p>   
+                        </div>
+                    </div>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <button type="button" class="botonM" routerLink="/"><i class="fa-solid fa-arrow-left"></i></button>
+      <h2 class="active"> Modificar Datos </h2>
+      
+      <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+  
+        <div class="form-group">
+            <label for="nombreP">Nombre:</label>
+            <input type="text" id="nombre" class="fadeIn second" name="nombre" placeholder="Ingrese nombre" [(ngModel)]="persona.nombre" required>
+        </div> 
+
+        <div class="form-group">
+            <label for="nombreP">Apellido:</label>
+            <input type="text" id="apellido" class="fadeIn second" name="apellido" placeholder="Ingrese apellido" [(ngModel)]="persona.apellido" required>
+        </div> 
+
+        <div class="form-group">
+            <label for="tituloP">Titulo: <p></p></label><!--p agregado para acomodar los carteles-->
+            <input type="text" id="titulo" class="fadeIn second" name="titulo" placeholder="Ingrese titulo" [(ngModel)]="persona.titulo" required>
+        </div>
+
+        <div style="display: flex;">
+
+          <div class="form-group">
+              <label for="ciudadP">Ciudad: <p></p></label><!--p agregado para acomodar los carteles-->
+              <input style="width: 70%;"type="text" id="ciudadp" class="fadeIn second" name="ciudadp" placeholder="Ingrese ciudad" [(ngModel)]="persona.ciudad" required>
+          </div>      
+          <div class="form-group">
+              <label for="provinciaP">Provincia: <p></p></label><!--p agregado para acomodar los carteles-->
+              <input style="width:87%;" type="text" id="provinciap" class="fadeIn second" name="provinciap" placeholder="Ingrese provincia" [(ngModel)]="persona.provincia" required>
+          </div>
+
+        </div>
+
+        <div class="form-group">
+          <label for="descripcion">Descripcion:</label>
+          <textarea id="descripcion" class="fadeIn third" name="descripcion" placeholder="Ingrese Descripcion" [(ngModel)]="persona.descripcion" required></textarea>
+        </div> 
+<!--
+        <div class="form-group">
+          <label for="img">Imagen:<p></p></label>
+          <input type="file" id="img" class="fadeIn second" name="img" [(ngModel)]="persona.img" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png">
+        </div>
+-->
+        <br>
+
+        <input type="submit" class="fadeIn fourth" value="Modificar">
+      </form>
+    </div>
+  </div>

@@ -1,0 +1,20 @@
+<div id="Hard skills" class="cuerpo">
+    <h3>Hard Skills & Soft Skills<button class="botonC" routerLink="/nuevaskill" *ngIf="islogged"><i class="fa-solid fa-plus"></i></button></h3>
+    <div class = "lista">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Skill of skill">
+                    <div>
+                        <p class="margen">{{Skill.nombreS}}-{{Skill.porcentaje}}%</p>
+                        <div>
+                            <td><progress max="100" value="{{Skill.porcentaje}}"></progress></td>
+                            <td><button class="botonM" routerLink="/editskill/{{Skill.id}}" *ngIf="islogged"><i class="fa-solid fa-pen"></i></button></td>
+                            <td><button class="botonM" (click)="delete(Skill.id)" *ngIf="islogged"><i class="fa-solid fa-trash"></i></button></td>
+                        </div>
+                    </div>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

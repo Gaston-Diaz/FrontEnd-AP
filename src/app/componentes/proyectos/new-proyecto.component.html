@@ -1,0 +1,33 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <button type="button" class="botonM" routerLink="/"><i class="fa-solid fa-arrow-left"></i></button>
+    <h2 class="active"> Nuevo Proyecto </h2>
+    
+    <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+
+      <div class="form-group">
+          <label for="nombreP">Nombre del Proyecto:</label>
+          <input type="text" id="nombreP" class="fadeIn second" name="nombreP" placeholder="Ingrese el nombre del Proyecto" [(ngModel)]="nombreP" required>
+      </div> 
+
+      <div class="form-group">
+        <label for="fechaI">Fecha:<p></p></label>
+        <input type="text" id="fecha" class="fadeIn second" name="fecha" placeholder="MM/AA    -    Ej: 05/22" [(ngModel)]="fecha" required>
+      </div>
+
+      <div class="form-group">
+        <label for="descripcion">Descripcion:</label>
+        <textarea id="descripcion" class="fadeIn third" name="descripcion" placeholder="Descripcion" [(ngModel)]="descripcionP" required></textarea>
+      </div>
+      
+      <div class="form-group">
+          <label for="enlace">Link a Proyecto:</label>
+          <input type="text" id="linkP" class="fadeIn second" name="linkP" placeholder="Ingrese el link" [(ngModel)]="enlace" required>
+      </div> 
+
+        <br>
+        <input type="submit" class="fadeIn fourth" value="Agregar">
+
+    </form>
+  </div>
+</div>

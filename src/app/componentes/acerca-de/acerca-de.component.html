@@ -1,0 +1,27 @@
+<div>
+    <div class="cuerpo2">
+        <img src="../../../assets/img1.jpg" alt="foto de Perfil" class="perfil"> 
+    </div>
+    <div id="datos" class="cuerpo">
+
+        <div>
+            <h3>{{persona.nombre}} {{persona.apellido}}<button class="botonM" routerLink="/editacercaDe/1" *ngIf="islogged"><i class="fa-solid fa-pen"></i></button></h3>
+            <p>{{persona.titulo}} </p>
+            <br>
+            <!--<p>Estudiante de Informatica en la UNLP </p>-->
+            <p>{{persona.ciudad}}, {{persona.provincia}}<!--<a href="#">Información de Contacto</a>--></p>
+<!--        <div style="margin-top: 30px;">
+                <button style="background-color:#ffcb74;" class="botonP">Tengo interés en</button>
+                <button class="botonP">Añadir Sección</button>
+                <button class="botonP">Más</button>
+            </div>-->
+        </div>
+        <!--<a href="https://unlp.edu.ar/"><img src="../../../assets/Logo_UNLP.jpg" class="logo"></a>-->
+        
+    </div>
+
+    <div id="AcercaDe" class="cuerpo">
+         <h3 style="text-shadow: 0.1em 0.1em 0.2em rgb(47, 47, 47, 60%);">Acerca de mi</h3>
+         <p>{{persona.descripcion}}</p>
+    </div>
+</div>

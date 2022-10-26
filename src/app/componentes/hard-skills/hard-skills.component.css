@@ -1,0 +1,31 @@
+progress[value]{
+    width: 600px;
+    height: 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 15px;
+}
+progress[value]::-webkit-progress-bar{
+    background-color: #2f2f2f;
+    opacity: 90%;
+    border-radius: 21px;
+    filter: blur(0.5px);
+}
+progress[value]::-webkit-progress-value{
+    background-color: #ffcb74;
+    opacity: 90%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;  
+}
+.lista{
+    padding-left: 10px;
+    padding-top: 5px;
+    position: relative;
+}
+.table{
+    padding-left: 7px;
+    padding-top: 5px;
+}
+h3{
+    text-shadow: 0.1em 0.1em 0.2em rgb(47, 47, 47, 60%);
+}

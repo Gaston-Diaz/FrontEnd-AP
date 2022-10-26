@@ -1,0 +1,35 @@
+<div class="wrapper fadeInDown" *ngIf="expLab">
+  <div id="formContent">
+    <button type="button" class="botonM" routerLink="/"><i class="fa-solid fa-arrow-left"></i></button>
+    <h2 class="active"> Modificar Experiencia </h2>
+    
+    <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+
+      <div class="form-group">
+          <label for="nombreE">Nombre de la Empresa:</label>
+          <input type="text" id="nombreE" class="fadeIn second" name="nombreE" placeholder="Ingrese el nombre de la Empresa" [(ngModel)]="expLab.nombreE" required>
+      </div> 
+
+      <div class="form-group">
+        <label for="descripcion">Descripcion:</label>
+        <textarea id="descripcion" class="fadeIn third" name="descripcion" placeholder="Descripcion" [(ngModel)]="expLab.descripcionE" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="fechaI">Fecha Inicio:</label>
+        <input type="text" id="fechaIni" class="fadeIn second" name="fechaIni" placeholder="MM/AA    -    Ej: 05/22" [(ngModel)]="expLab.fechaIni" required>
+      </div>
+
+      <div class="form-group">
+        <label for="fechaF">Fecha Fin:</label>
+        <input type="text" id="fechaFin" class="fadeIn second" name="fechaFin" placeholder="MM/AA    -    Ej: 10/22" [(ngModel)]="expLab.fechaFin" required>
+      </div>
+
+      <br>
+
+      <input type="submit" class="fadeIn fourth" value="Modificar">
+
+    </form>
+  </div>
+</div>
+

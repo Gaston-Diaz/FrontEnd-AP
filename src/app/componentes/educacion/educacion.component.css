@@ -1,0 +1,14 @@
+.lista{
+    padding-left: 25px;
+    padding-top: 10px;
+}
+h3{
+    text-shadow: 0.1em 0.1em 0.2em rgb(47, 47, 47, 60%);
+}
+h4, h5{
+    display: inline; /* pongo el trabajo y los años en la misma linea*/
+}
+/*.texto-borde{
+    -webkit-text-stroke: 0.7px rgb(255, 203, 116, 70%);
+    color: transparent;
+}*/

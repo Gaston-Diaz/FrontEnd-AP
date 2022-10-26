@@ -1,0 +1,52 @@
+<div id="Educacion" class="cuerpo">
+    <h3>Educacion<button type="button"class="botonC" routerLink="/nuevaedu" *ngIf="islogged"><i class="fa-solid fa-plus"></i></button></h3>
+   <div class="lista">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <div>
+                        <div style="display:flex;">
+                            <td><h4>{{Educacion.nombreE}}:  </h4></td>
+                            <td><h5 style="color: rgb(47, 47, 47, 70%);">{{Educacion.fechaIni}} - {{Educacion.fechaFin}}</h5></td>
+                            <div *ngIf="islogged">
+                                <td><button class="botonM" routerLink="/editedu/{{Educacion.id}}"><i class="fa-solid fa-pen"></i></button></td>
+                                <td><button class="botonM" (click)="delete(Educacion.id)"><i class="fa-solid fa-trash"></i></button></td>
+                            </div>
+                        </div>
+                        <td>{{Educacion.descripcionE}}</td>
+                    </div> 
+                    <br>    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+    
+    <!--   <div class="margen" style="display: flex;">
+
+        <img src="../../../assets/logoo-300x300.jpg" class="ico">
+        <div>
+            <h4>
+                UNLP
+                <button class="botonM"><i class="fa-solid fa-pen"></i></button>
+                <button class="botonM"><i class="fa-solid fa-trash"></i></button>
+            </h4>
+            <p>Licenciatura en Sistemas.</p>
+            <p>2014-Actualidad</p>
+       </div>
+   </div>
+
+   <div class="margen" style="display: flex;">
+       <img src="../../../assets/defaultLogo.jpg" class="ico">
+       <div>
+            <h4>
+                Escuela San Carlos
+                <button class="botonM"><i class="fa-solid fa-pen"></i></button>
+                <button class="botonM"><i class="fa-solid fa-trash"></i></button>
+            </h4>
+            <p>Primaria-Secundaria</p>
+            <p>nose-2014</p>
+        </div>
+   </div> --> 
+

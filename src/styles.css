@@ -1,0 +1,90 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: #2f2f2f;
+}
+
+#contenedor{
+    width: auto;
+    height: auto;
+    margin: 2px auto;
+    padding: 8px;
+}
+#datos{
+    display: flex;
+    justify-content: space-between;
+}
+.botonM{/* BOTONES MODIFICAR*/
+    width: 20px;
+    height: 20px;
+   /* border-radius: 5px;*/
+    border: none;
+    margin-left: 20px;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.botonC{ /* BOTON PARA AGREGAR DATOS +*/
+    width: 20px;
+    height: 20px;
+    /*border-radius: 50%;*/
+    border: none;
+    padding: 1px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.header{
+    margin-bottom: 8px;
+    position: relative;
+}
+.banner{
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 350px;  
+    filter: blur(0.5px);
+}
+.perfil{
+    position: absolute; /*Posiciona dentro del elemento*/
+    left: 0;
+    bottom: 0;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+.margen{
+    margin-top: 20px;
+}
+.cuerpo{
+    padding: 15px;
+    background-color: #f6f6f6;
+    border-radius: 13px;
+    margin-bottom: 8px;
+    position: relative;
+}
+.logo{
+    width: 140px;
+    height: 65px;
+}
+.ico{
+    width: 50px;
+    height: 50px;
+}
+.colorPro{
+    color: #ffcb74;  
+}
+
+.fa-pen{
+    color: #348AA7;
+    text-shadow: 0.1em 0.1em 0.2em rgb(47, 47, 47, 60%) ;
+}
+.fa-trash{
+    color: #F26157;
+    text-shadow: 0.1em 0.1em 0.2em rgb(47, 47, 47, 60%) ;
+}
+/*---------------------------modal--------------------------------------------------------------------*/
+
