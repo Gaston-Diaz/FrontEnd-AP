@@ -17,16 +17,27 @@ img{
 }
 .botonP{ /* BOTONES DEL LOGIN */
     border-radius: 50px;
+    border-color: white;
     padding: 1px;
     width: 42px;
     height: 42px;
     cursor:pointer;
-    background-color: rgb(255, 255, 255, );
+    background-color: transparent;
     opacity: 100%;
 }
 .fa-right-to-bracket{
+    color: white;
     font-size: 23px;
 }
+.fa-right-to-bracket:hover{
+    color: #348AA7;
+    transition: color 0.5s;
+}
 .fa-right-from-bracket{
+    color: white;
     font-size: 23px;
+}
+.fa-right-from-bracket:hover{
+    color: #F26157;
+    transition: color 0.5s;
 }

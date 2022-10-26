@@ -21,6 +21,7 @@ body{
 .botonM{/* BOTONES MODIFICAR*/
     width: 20px;
     height: 20px;
+    background-color: transparent;
    /* border-radius: 5px;*/
     border: none;
     margin-left: 20px;
@@ -31,6 +32,7 @@ body{
 .botonC{ /* BOTON PARA AGREGAR DATOS +*/
     width: 20px;
     height: 20px;
+    background-color: transparent;
     /*border-radius: 50%;*/
     border: none;
     padding: 1px;
@@ -79,12 +81,28 @@ body{
 }
 
 .fa-pen{
-    color: #348AA7;
+    color: #2f2f2f;
     text-shadow: 0.1em 0.1em 0.2em rgb(47, 47, 47, 60%) ;
 }
+.fa-pen:hover{
+    color: #348AA7;
+    transition: color 0.10s;
+}
 .fa-trash{
-    color: #F26157;
+    color: #2f2f2f;
     text-shadow: 0.1em 0.1em 0.2em rgb(47, 47, 47, 60%) ;
+}
+.fa-trash:hover{
+    color: #F26157;
+    transition: color 0.10s;
+}
+.fa-plus{
+    color: #2f2f2f;
+    text-shadow: 0.1em 0.1em 0.2em rgb(47, 47, 47, 60%) ;
+}
+.fa-plus:hover{
+    color: #368F8B;
+    transition: color 0.10s;
 }
 /*---------------------------modal--------------------------------------------------------------------*/
 
