@@ -31,7 +31,9 @@ img{
 }
 .fa-right-to-bracket:hover{
     color: #348AA7;
+    font-size: 28px;
     transition: color 0.5s;
+    transition: font-size 1ms;
 }
 .fa-right-from-bracket{
     color: white;
@@ -39,5 +41,7 @@ img{
 }
 .fa-right-from-bracket:hover{
     color: #F26157;
+    font-size: 28px;
     transition: color 0.5s;
+    transition: font-size 1ms;
 }
