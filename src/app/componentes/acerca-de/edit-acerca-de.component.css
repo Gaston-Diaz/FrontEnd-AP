@@ -40,7 +40,8 @@ h2 {
 #formContent {
   -webkit-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
-  background: #fff;
+  background: rgb(255, 255, 255, 60%);
+  transition: background-color 1s;
   padding: 0px;
   width: 90%;
   max-width: 450px;
@@ -48,6 +49,10 @@ h2 {
   -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
   box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
   text-align: center;
+}
+#formContent:hover{
+  background-color: rgb(255, 255, 255);
+  transition: background-color 1s;
 }
 /*
 #formFooter {
@@ -117,7 +122,7 @@ input[type=text] {
   padding: 15px 15px;
   text-decoration: none;
   display: inline-block;
-  font-size: 14px;
+  font-size: 15px;
   margin: 5px;
   width: 85%;
   border: 2px solid #f6f6f6;

@@ -40,7 +40,8 @@ h2 {
 #formContent {
   -webkit-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
-  background: #fff;
+  background: rgb(255, 255, 255, 60%);
+  transition: background-color 1s;
   padding: 30px;
   width: 90%;
   max-width: 450px;
@@ -49,6 +50,10 @@ h2 {
   -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
   box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
   text-align: center;
+}
+#formContent:hover{
+  background-color: rgb(255, 255, 255);
+  transition: background-color 1s;
 }
 /*
 #formFooter {
@@ -81,7 +86,7 @@ input[type=button], input[type=submit], input[type=reset]  {
   background-color: #2F2F2F;
   border: none;
   color: white;
-  padding: 15px 80px;
+  padding: 9px 80px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -115,10 +120,10 @@ input[type=text] {
   background-color: #f6f6f6;
   border: none;
   color: #0d0d0d;
-  padding: 15px 32px;
+  padding: 15px 15px;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
   margin: 5px;
   width: 85%;
   border: 2px solid #f6f6f6;
@@ -129,6 +134,7 @@ input[type=text] {
   transition: all 0.5s ease-in-out;
   -webkit-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
+  height: 30px;
 }
 
 input[type=text]:focus {
@@ -147,7 +153,7 @@ input[type=text]:placeholder {
   background-color: #f6f6f6;
   border: none;
   color: #0d0d0d;
-  padding: 15px 32px;
+  padding: 15px 15px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
