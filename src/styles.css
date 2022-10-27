@@ -68,10 +68,15 @@ body{
 }
 .cuerpo{
     padding: 15px;
-    background-color: #f6f6f6;
+    background-color: rgb(246, 246, 246, 90%);
+    transition: background-color 1s;
     border-radius: 13px;
     margin-bottom: 8px;
     position: relative;
+}
+.cuerpo:hover{
+    background-color: rgb(246, 246, 246);
+    transition: background-color 1s;
 }
 .logo{
     width: 140px;
