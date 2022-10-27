@@ -5,7 +5,12 @@
     font-family: sans-serif;
 }
 body{
-    background-color: #2f2f2f;
+    /*background-color: #2f2f2f;*/
+    background-image: url(assets/circle-scatter-haikei.svg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: rotate 15s infinite alternate linear;
 }
 
 #contenedor{
@@ -120,12 +125,19 @@ body{
     transition: color 0.10s;
     transition: font-size 0.10s;
 }
+/*------------FONDO PARA LOS FORMULARIOS---------------------------------------*/
+@keyframes rotate {
+    100%{
+      background-position: 15% 50%;
+    }
+}
 .fondoFormularios{
     height: 100vh;
-    background-image: url(assets/background.png);
+    background-image: url(assets/blob-scene.svg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    animation: rotate 15s infinite alternate linear;
   }
 /*---------------------------modal--------------------------------------------------------------------*/
 
