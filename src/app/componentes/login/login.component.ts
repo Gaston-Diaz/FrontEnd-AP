@@ -17,7 +17,13 @@ export class LoginComponent implements OnInit {
   login(form: NgForm){
       const email = form.value.email;
       const password = form.value.password;
-      this.loginService.login(email,password);
+      
+      if(email != "" && password != ""){
+         this.loginService.login(email,password);
+      }else if (email == ""){
+         alert("El email es un campo requerido para realizae el login");
+      }else
+      alert("La contraseña es un campo requerido para realizar el login");
   }
 
 }
